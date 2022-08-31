@@ -1,0 +1,46 @@
+body
+{
+  background-color: #e9c4ff; /*set bg color*/
+  background-image: url("http://3.bp.blogspot.com/-eyiqHjMAKS4/UIbxSX_RUfI/AAAAAAAAC3Q/t1DJyRojw9w/s1600/white_grunge_background.jpg"); /*add background image*/
+  background-attachment: fixed; /*make it so that the bg image does not scroll with the rest of the page*/
+  width: 600px; /*set width*/
+  margin: auto; /*auto set margins to center text*/
+  border-left: 1px solid #000000; /*create black border on left*/
+  border-right: 1px solid #000000; /*create black border on right*/
+  padding: 10px; /*add space between border and text*/
+  font-family: arial;
+}
+
+h1
+{
+  font-family: Verdana; /*change font*/
+  color: #660099; /*set font color*/
+}
+
+h3
+{
+  text-align: center; /*center align text*/
+}
+
+.underlined
+{
+  text-decoration: underline;
+}
+
+.dark-purple
+{
+  color: #660099;
+}
+
+#title-and-author
+{
+  letter-spacing: 5px;  /*set spaces between letters*/
+  font-family: "Trebuchet MS"; /*change font -- needs quotes because of space*/
+  color: #660099; /*change text color*/
+  font-size: smaller; /*make the font slightly smaller*/
+}
+
+#bigger-font
+{
+  font-size: 20pt; /*modify font size*/
+}

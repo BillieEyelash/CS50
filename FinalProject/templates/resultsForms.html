@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+  {% if name|length > 0 %}
+    <p>Hello, {{name}}!</p>
+  {% else %}
+    <p>Invalid name!</p>
+  {% endif %}
+
+  {% if sushi is not none %}
+    {% if sushi == "yes"%}
+      <p>You like sushi.</p>
+    {% else %}
+      <p>You don't like sushi</p>
+    {% endif %}
+  {% else %}
+    <p>You didn't give your opinion on sushi.</p>
+  {% endif %}
+
+  {% if vehicles|length == 2 %}
+    <p>You have both a bike and a car.</p>
+  {% elif vehicles|length == 1 %}
+    <p>You have a {{vehicles[0]}}</p>
+  {% else %}
+    <p>You have neither a bike nor a car</p>
+  {% endif %}
+
+{% endblock %}

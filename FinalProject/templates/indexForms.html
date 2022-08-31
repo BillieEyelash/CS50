@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Home Page</title>
+{% endblock %}
+
+{% block body %}
+
+  <form method="POST" action="FormsResults">
+    Full name: <br/>
+    <input type="text" name="fullname" required/> <br/>
+    <!--Radiobuttons: can only select one at a time-->
+    Do you like sushi? <br/>
+    <input type="radio" name="sushi" value="yes" /> Yes
+    <input type="radio" name="sushi" value="no" /> No <br/>
+    <!--Checkboxes: can selct multiple at the same time-->
+    Do you have a bike or a car? <br/>
+    <input type="checkbox" name="vehicle" value="bike" /> Bike
+    <input type="checkbox" name="vehicle" value="car"> Car
+    <br/>
+    <input type="submit" value="submit" />
+  </form>
+
+{% endblock %}

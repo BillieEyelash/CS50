@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}
+  <title>Factorial Page</title>
+{% endblock %}
+
+{% block body %}
+  <h1>Factorial Page</h1>
+  <ul>
+    {% for n in f %}
+      <li>{{n}}</li>
+    {% endfor %}
+  </ul>
+  <a href="PythonWorksheet">Link to home page</a>
+{% endblock %}

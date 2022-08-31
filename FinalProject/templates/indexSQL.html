@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>MySQL Website</title>
+{% endblock %}
+
+{% block body %}
+  <p>Search for a name in the database!</p>
+  <form method="POST" action="SQLResults">
+    Name:
+    <input type="text" name="searchname"><br/>
+    Insert data:<br/>
+    Name:
+    <input type="text" name="name"><br/>
+    Age:
+    <input type="number" name="age"><br/>
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}
