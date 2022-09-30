@@ -2,14 +2,95 @@
 
 {% block head %}
   <title>CS4 Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 {% endblock %}
 
 {% block body %}
-<!--TODO: INTRO, FORMAT LINKS-->
-  <p>Welcome to my CS4 portfolio</p>
-  <a href="HTMLWorksheet">HTML Worksheet</a>
-  <a href="CSSWorksheet">CSS Worksheet</a>
-  <a href="PythonWorksheet">Python Worksheet</a>
-  <a href="SQLWorksheet">SQL Worksheet</a>
-  <a href="FormsWorksheet">Forms Worksheet</a>
+<!--TODO: INTRO-->
+  <h1 class="d-flex justify-content-center display-1">CS4 Portfolio</h1>
+  <h2 class="display-4 m-5">Worksheets</h2>
+  <div class="row m-5">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">HTML Worksheet</h5>
+          <p class="card-text">info about html worksheet</p>
+          <a href="HTMLWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CSS Worksheet</h5>
+          <p class="card-text">info about css worksheet</p>
+          <a href="CSSWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Python Worksheet</h5>
+          <p class="card-text">info about python worksheet</p>
+          <a href="PythonWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-5">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SQL Worksheet</h5>
+          <p class="card-text">info about sql worksheet</p>
+          <a href="SQLWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Forms Worksheet</h5>
+          <p class="card-text">info about forms worksheet</p>
+          <a href="FormsWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="display-4 m-5">Projects</h2>
+  <div class="row m-5">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">HTML/CSS Project</h5>
+          <p class="card-text">info about html/css project</p>
+          <a href="HTMLCSSProject" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Python Project</h5>
+          <p class="card-text">info about python project</p>
+          <a href="PythonProject" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SQL Project</h5>
+          <p class="card-text">info about sql project</p>
+          <a href="SQLProject" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="display-4 m-5">Final Project</h2>
+  <!--TODO: add section for final projext, just link to external site-->
 {% endblock %}
