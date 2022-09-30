@@ -84,3 +84,8 @@ def resultsForms():
     sushiInput = request.form.get("sushi")
     vehicleInput = request.form.getlist("vehicle")
     return render_template('resultsForms.html', name=inputtedName, sushi=sushiInput, vehicles=vehicleInput)
+
+# HTML/CSS Project
+@app.route('/HTMLCSSProject')
+def indexHTMLCSSProject():
+   return render_template('indexHTMLCSSProject.html')
