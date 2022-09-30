@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+  {% block head %}
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="static/stylePythonProject.css"/>
+  {% endblock %}
+
+  {% block body %}
+    <div class="background">
+      <h1>Book Club Signup</h1>
+      <form method="POST" action="PythonProjectResults">
+        First Name:
+        <input type="text" name="firstname" required/>
+        <br/>
+        Last Name:
+        <input type="text" name="lastname" required/>
+        <br/>
+        Username:
+        <input type="text" name="username" required/>
+        <br/>
+        Password:
+        <input type="password" name="password" required/>
+        <br/>
+        Confirm Password:
+        <input type="password" name="passconfirm" required/>
+        <br/>
+        Email:
+        <input type="email" name="email" required/>
+        <br/>
+
+        <!-- Create a checkbox for each genre in the provided list -->
+        Favorite Genre(s):<br/>
+        {% for g in genres %}
+          <input type="checkbox" name="genre" value="{{g}}"/> {{g}} <br/>
+        {% endfor %}
+        Number of books read this month:
+        <input type="number" name="booksread" required/>
+        <br/>
+        <input id="submit" type="submit" value="submit"/>
+      </form>
+    </div>
+  {% endblock %}

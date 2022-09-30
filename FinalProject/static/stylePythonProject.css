@@ -1,0 +1,37 @@
+body
+{
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #edfffe;
+  font-family: Verdana;
+  line-height: 30px;
+}
+
+h1
+{
+  margin-top: 0px;
+  font-family: "Trebuchet MS";
+  font-size: 30pt;
+  color: #000154;
+}
+
+.bold
+{
+  font-weight: bold;
+}
+
+.background
+{
+  width: 500px;
+  padding: 20px;
+  background-color: #f2f9fa;
+  border: 5px solid #000154;
+  border-radius: 10px;
+}
+
+#submit
+{
+  border-radius: 10px;
+  padding: 5px;
+}

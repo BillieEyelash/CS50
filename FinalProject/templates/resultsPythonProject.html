@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+  {% block head %}
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="static/stylePythonProject.css"/>
+  {% endblock %}
+
+  {% block body %}
+    <div class="background">
+      <h1>Results</h1>
+      <p><span class="bold">Full Name:</span> {{name[0]}} {{name[1]}}</p>
+      <p><span class="bold">Email:</span> {{email}}</p>
+
+      <!-- If no genres listed, display message, else display genres -->
+      {% if genres|length == 0%}
+        <p>You did not enter your genre preference.</p>
+      {% else %}
+        <p class="bold">Favorite Genre(s):</p>
+        <ul>
+          {% for g in genres %}
+            <li>{{g}}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <!-- If number not given, display message, else display number -->
+      {% if booksRead == "" %}
+        <p>You did not enter the number of books you have read this month.</p>
+      {% else %}
+        <p>You have read {{booksRead}} books this month.</p>
+      {% endif %}
+    </div>
+  {% endblock %}
