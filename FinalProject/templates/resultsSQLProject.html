@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+  {% block head %}
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="static/stylePythonProject.css"/>
+  {% endblock %}
+
+  {% block body %}
+    <div class="background">
+      <h1>Results</h1>
+      <p>Your information has been successfully added to the database.</p>
+      {% if p|length == 0 %}
+        <p>There are no people who like the same genres as you.</p>
+      {% else %}
+        <p>Here are people who are interested in the same genres as you:</p>
+        <ul>
+          {% for x in p %}
+            <li>{{x}}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endblock %}
