@@ -26,7 +26,7 @@ def indexCSS():
 
 # Python worksheet
 @app.route('/PythonWorksheet')
-def index():
+def indexPython():
     return render_template('indexPython.html', myVar=7, myList=['a', 'b', 'c'])
 
 @app.route('/PythonFactorial')
@@ -45,7 +45,7 @@ def indexSQL():
     return render_template('indexSQL.html')
 
 @app.route('/SQLResults', methods=['POST'])
-def results():
+def resultsSQL():
     # Get form input
     searchName = request.form.get("searchname")
     insertName = request.form.get("name")
@@ -75,11 +75,11 @@ def results():
 
 # Forms worksheet
 @app.route('/FormsWorksheet')
-def index():
+def indexForms():
     return render_template('indexForms.html')
 
 @app.route('/FormsResults', methods=['POST'])
-def results():
+def resultsForms():
     inputtedName = request.form.get("fullname")
     sushiInput = request.form.get("sushi")
     vehicleInput = request.form.getlist("vehicle")
