@@ -6,33 +6,34 @@
 {% endblock %}
 
 {% block body %}
-<!--TODO: INTRO-->
   <h1 class="d-flex justify-content-center display-1">CS4 Portfolio</h1>
+  <p class="mx-5 px-5">Welcome to my CS4 portfolio! Below you will find all the mini websites I created for assignments and worksheets, as well as their descriptions. Finally, there is a link to my final website and description of what I did. Scroll down to take a look at the websites, or check out <a href="https://github.com/riatalwar/CS4F2021" target="_blank">this link</a> for my source code.</p>
+  
   <h2 class="display-4 m-5">Worksheets</h2>
   <div class="row m-5">
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">HTML Worksheet</h5>
-          <p class="card-text">info about html worksheet</p>
+          <p class="card-text">This worksheet was pretty simple, and I used it to just test out some basic HTML tags and features.</p>
           <a href="HTMLWorksheet" class="btn btn-primary">View Worksheet</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">CSS Worksheet</h5>
-          <p class="card-text">info about css worksheet</p>
+          <p class="card-text">This worksheet helped me learn how to use various CSS style elements and format an article about CSS.</p>
           <a href="CSSWorksheet" class="btn btn-primary">View Worksheet</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Python Worksheet</h5>
-          <p class="card-text">info about python worksheet</p>
+          <p class="card-text">This worksheet taught me how to create a more complex website using Flask and Jinja.</p>
           <a href="PythonWorksheet" class="btn btn-primary">View Worksheet</a>
         </div>
       </div>
@@ -40,21 +41,21 @@
   </div>
 
   <div class="row m-5">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">SQL Worksheet</h5>
-          <p class="card-text">info about sql worksheet</p>
-          <a href="SQLWorksheet" class="btn btn-primary">View Worksheet</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Forms Worksheet</h5>
-          <p class="card-text">info about forms worksheet</p>
+          <p class="card-text">In this worksheet I learned how to use Flask to access, manipulate, and send user input.</p>
           <a href="FormsWorksheet" class="btn btn-primary">View Worksheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 d-flex align-items-stretch">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SQL Worksheet</h5>
+          <p class="card-text">For this worksheet I experiment with storing simple information in a SQL database and querying the data from there.</p>
+          <a href="SQLWorksheet" class="btn btn-primary">View Worksheet</a>
         </div>
       </div>
     </div>
@@ -62,29 +63,29 @@
 
   <h2 class="display-4 m-5">Projects</h2>
   <div class="row m-5">
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">HTML/CSS Project</h5>
-          <p class="card-text">info about html/css project</p>
+          <p class="card-text">This project was just a single page with a formatted brownie recipe I love. I experimented with different HTML and CSS features.</p>
           <a href="HTMLCSSProject" class="btn btn-primary">View Project</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Python Project</h5>
-          <p class="card-text">info about python project</p>
-          <a href="PythonProject" class="btn btn-primary">View Project</a>
+          <p class="card-text">For this project I created a book club signup form. The form asks the user various questions and sends the results to a confirmation page.</p>
+          <a href="PythonProject" class="btn btn-primary align-self-baseline">View Project</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 d-flex align-items-stretch">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">SQL Project</h5>
-          <p class="card-text">info about sql project</p>
+          <p class="card-text">Here, I extended my Python project to store the results in a SQL database. I also queried the database to find members with common interests to display.</p>
           <a href="SQLProject" class="btn btn-primary">View Project</a>
         </div>
       </div>
@@ -92,5 +93,15 @@
   </div>
 
   <h2 class="display-4 m-5">Final Project</h2>
-  <!--TODO: add section for final projext, just link to external site-->
+  <div class="row m-5">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Book Tracking Website</h5>
+          <p class="card-text">At the beginning of this project, my plans looked like <a href="https://drive.google.com/file/d/19o94QMmxBln2ArhT9PhR2ce4u_5K4NrQ/view?usp=sharing" target="_blank">this</a>. I used the google books API to allow users to search for books, and I created a secure login system. Users can create accounts and use them to store books they want to read. I also added a page with my personal recommendations for various genres, as well as inserted a Goodreads widget with my reading updates. To store my recommendations, I created a SQL database to store genres and books. For some books, there are reviews that I have written that show up when you search for them.</p>
+          <a href="http://www.2122.lakeside-cs.org/RiaTalwar/FinalProject/" target="_blank" class="btn btn-primary">View the website</a>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
